@@ -1,0 +1,18 @@
+.header {
+    font-family: Calibri;
+    color: white;
+    text-align: center;
+    font-size:  750%;
+}
+.hello {
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+.button {
+    text-align: center;
+    font-size: 25px;
+    margin-left: 40%;
+    margin-right: 25%;
+    border-radius: 8px;
+    background-color: white;
+}
