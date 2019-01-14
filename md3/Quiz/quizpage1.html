@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="quizstyling.css">
+    <script type="text/javascript" src="jsfile.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+</head>
+<body>
+    <div class="container" >
+            <div>
+                <div id="content">
+                    <div class="titlebox">
+                        <b>BTS X ARMY Quiz</b>
+                    </div>
+                    <div class = "inner">
+                <div class="text">
+                    <div class="row">
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            
+                        </div>
+                        <div class="col-lg-10">
+                            <span>Who is the leader of BTS? <br>
+                                <button class="btn btn-warning" id = "hint" style="float: right;" onclick = "display(this)">Click here for some hints baby!!!</button>
+                            <div class="row">
+                                <div class="col-lg-2" >
+                                    <div class="speech-bubble" style="display: none;" id = "b1lb">
+                                        <span><center> hint </center></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                        <div class="alert alert-warning" id="hint1" style="display: none;">
+                            <strong>Hint!!</strong> Guy with cute dimples and super smart.
+                            <button style="float: right; margin-bottom: 10px" class = "btn btn-warning"><i class="fas fa-angle-right" ></i></button>
+                            <button type="button" class="close"  id = "c1rs" onclick="hide(this)">&times;</button>
+                        </div>
+                            <input type="radio" name="q1" value="park Jimin"> Park Jimin<br>
+                            <input type="radio" name="q1" value="Jeon Jungkook"> Jeon Jungkook<br>
+                            <input type="radio" name="q1" value="Kim Taehyung"> Kim Taehyung<br>
+                            <input type="radio" name="q1" value="kim Namjoon"> Kim Namjoon 
+                        </span><br>
+                        <br>
+                        <div class="alert alert-success">
+                            <strong>Correct!</strong> Kim Namjoon is the leader of BTS. 😍😍
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        </div>
+                        <div class="alert alert-danger">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong>Incorrect! What are you doing??? Give me the crct answer 😡</strong>
+                        </div>
+                        <button class="btn btn-dark" style="float: right;">Submit!</button>
+                        <br>
+                        <br>
+                        
+                        
+                        
+                        <div class="col-lg-1">
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <br>
+                    </div>
+                </div>
+                <div class="reset">
+                   <button class="btn btn-light" style="color: #1a73e8">Reset this activity</button> 
+                </div>
+                
+                <!-- <a href="quizpage1.html" class="reset">Reset this activity</a> -->
+                <!-- <span class="reset">Reset this activity</span> -->
+            </div>
+
+                </div>
+
+            </div>
+
+             
+        </div>
+    </div>
+</body>
+</html>

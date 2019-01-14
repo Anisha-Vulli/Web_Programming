@@ -1,0 +1,32 @@
+{
+	"incrctmsg" : "Incorrect! What are you doing??? Give me the crct answer 😡",
+	"questions" : [
+		{
+			"question":"Who is the leader of BTS?",
+			"option1":"Park Jimin",
+			"option2":"Jeon Jungkook",
+			"option3":"Kim Taehyung",
+			"option4":"Kim Namjoon",
+			"hint1":"A smart guy",
+			"hint2":"IQ 148",
+			"crctmsg":"Kim Namjoon is the leader of BTS. 😍😍"
+		}, {
+			"question":"In which year did the album 'WINGS' release?",
+			"option1":"2016",
+			"option2":"2013",
+			"option3":"2018",
+			"option4":"2014",
+			"hint1":"The year they received a MAMA Artist of the year award",
+			"hint2":"The year they received a Melon Artist of the year award",
+			"crctmsg":"You got it right!!! 2016 is the year 💜💜 Some purple hearts for you."
+		}, {
+			"question":"In which year did the album 'WINGS' release?",
+			"option1":"2016",
+			"option2":"2013",
+			"option3":"2018",
+			"option4":"2014",
+			"hint1":"The year they received a MAMA Artist of the year award",
+			"hint2":"The year they received a Melon Artist of the year award",
+			"crctmsg":"You got it right!!! 2016 is the year 💜💜 Some purple hearts for you."
+		}]
+}

@@ -1,13 +1,38 @@
+
+.question{
+    font-weight: 600;
+    margin-left: 10%;
+}
+.answers {
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+#submit{
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #297;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#submit:hover{
+    background-color: #3a8;
+}
+
+
 .header {
     font-family: Calibri;
     color: black;
     text-align: center;
     font-size:  750%;
 }
-/*.hello {
+.hello {
     margin-top: 25%;
     margin-bottom: 25%; 
-}*/
+}
 .button {
     text-align: center;
     font-size: 25px;
@@ -54,4 +79,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: bottom right; 
+}
+
+.quiz {
+    margin-left: 10%;
 }
