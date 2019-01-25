@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template</title>
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+
+    <!-- jQuery library -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+    <!-- Latest compiled JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylepage.css">
+</head>
+<body background="download.jpg">
+	<div class="container-fluid" >
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<div class="head row">
+					<h1 id = "heading" style="font-family: Algerian"><b>Post your comments here</b></h1>
+				</div>
+				<div class = "enter row">
+					<div class="col-md-2">
+					</div>
+					<div class="col-md-8">
+						<form class="form-horizontal-fluid">
+						  <div class="form-group">
+						    <label class="control-label" for="name"><b>Name: </b></label>
+						    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+						    <label for="pwd"><b>Password:</b></label>
+						    <input type="password" class="form-control" id="pwd" placeholder="password">
+						    <label class="control-label" for="cmt"><b>Comments: </b></label>
+						    <textarea class="form-control input-lg" rows="5" id="comment" placeholder= "Enter your comments"></textarea>
+						    <br>
+						    <button id = "btn"type="button" class="btn btn-default" onclick= "post()">Post Comment</button>
+						  </div>
+						</form>
+					</div>
+					<div class="col-md-2">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<div class = "alert alert-success" id = "authen_go"style="display: none;">
+							<strong>Success!!! Access granted..</strong>
+						</div>
+						<div class="alert alert-danger" id = "authen_fail" style="display: none; ">
+							<STRONG>Can't display your comment please check if you have filled everything</STRONG>
+						</div>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+				
+				
+				<div class="display row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<div id = "card_to_be_displayed">
+						</div>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src = "comment.js"></script>
+</body>
+</html>
