@@ -1,0 +1,19 @@
+<p>
+  <button  class = "btn btn-warning" style = "float: right" type = "button"  (click) = "display_func()">
+    HINT 
+  </button><br><br>
+</p>
+<div class="card card-body" [style.display] = "display">
+    <div class = "row">
+      <div class = "col-md-2">
+        <button type="button" class="btn btn-primary" [style.display] = "leftDisplay"  (click) = "Previous()">Previous</button>
+      </div>
+      <div class = "col-md-8">
+        <span style = "margin-left: 23%; font-size: 150%">{{hints[hintindex]}}</span>
+      </div>
+      <br>
+      <div class = "col-md-2">
+        <button type="button" class="btn btn-primary" [style.display] = "rightDisplay"  (click) = "Next()">Next</button>
+      </div>
+    </div>
+  </div>

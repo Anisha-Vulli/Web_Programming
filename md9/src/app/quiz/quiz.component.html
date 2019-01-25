@@ -1,0 +1,17 @@
+<div class="container-fluid" >
+  <div>
+      <div id="content">
+          <div class="titlebox">
+              <b>BTS X ARMY Quiz</b>
+          </div>
+          <div class = "inner">
+              <div class = "container-fluid" id = "quesbody" *ngFor = "let ques of fullDetails, index as i">
+                <app-question [question] = "ques" [index] = "i"></app-question>
+              </div>
+              <div class="reset">
+                 <button class="btn btn-light" style="color: #1a73e8">Reset this activity</button> 
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

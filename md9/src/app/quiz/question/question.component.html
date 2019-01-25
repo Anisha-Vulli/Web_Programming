@@ -1,0 +1,14 @@
+<h4>{{question.question}}</h4>
+  <app-hint [hints]="question.hints"></app-hint>
+  <div *ngFor = "let option of question.options, index as j">
+    <label>
+        <input (click) = "validation(j)" type = "radio" [name] = "i" [value] = "option" [disabled] = "status"> {{option}}
+    </label>
+  </div>
+  <hr>
+  <div class ="alert alert-danger" role="alert" *ngIf = "wrng">
+    <p> <strong>Incorrect!</strong> {{question.incrctmsg}}</p></div>
+  <div class="alert alert-success" role="alert" *ngIf = "crct">
+  		<p> <strong>Correct!</strong> {{question.crctmsg}} </p></div>
+
+
