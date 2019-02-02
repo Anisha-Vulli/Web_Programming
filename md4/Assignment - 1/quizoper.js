@@ -99,21 +99,18 @@ function load() {
 function hinttextchange(button) {
 	var splitid = button.id.split("");
 	if(splitid[0] == "p") {
-		console.log(data[splitid[1] - 1]);
-		console.log(data[splitid[1]].hints[0]);
-		document.getElementById("hinttxt" + splitid[1]).innerHTML = data[splitid[1]].hints[0];
+		document.getElementById("hinttxt" + splitid[1]).innerHTML = '<span style = "margin-left: 23%; font-size: 150%">' + data[splitid[1]].hints[0] + '</span>;'
 		document.getElementById("n" + splitid[1]).disabled = false;
 		document.getElementById("p"+splitid[1]).disabled = true;
 	} else {
-		console.log(data[splitid[1]].hints[1]);
-		document.getElementById("hinttxt" + splitid[1]).innerHTML = data[splitid[1]].hints[1];
+		document.getElementById("hinttxt" + splitid[1]).innerHTML = '<span style = "margin-left: 23%; font-size: 150%">' + data[splitid[1]].hints[1] + '</span>;'
 		document.getElementById("p"+splitid[1]).disabled = false;
 		document.getElementById("n"+splitid[1]).disabled = true;
 	}
 };
 
 function validation(radio) {
-	console.log(radio);
+	// console.log(radio);
 	var splitansid = radio.id.split("");
 	console.log(splitansid);
 	if(splitansid[0] === data[splitansid[2]].crctans) {

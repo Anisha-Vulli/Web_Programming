@@ -25,13 +25,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylepage.css">
 </head>
-<body background="download.jpg">
+<body>
 	<div class="container-fluid" >
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
 				<div class="head row">
-					<h1 id = "heading" style="font-family: Algerian"><b>Post your comments here</b></h1>
+					<h1 id = "heading" style="font-family: Algerian; margin-top: 5%"><b>Post your comments here</b></h1>
 				</div>
 				<div class = "enter row">
 					<div class="col-md-2">
@@ -40,10 +40,15 @@
 						<form class="form-horizontal-fluid">
 						  <div class="form-group">
 						    <label class="control-label" for="name"><b>Name: </b></label>
+						    <br>
 						    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+						    <br>
 						    <label for="pwd"><b>Password:</b></label>
+						    <br>
 						    <input type="password" class="form-control" id="pwd" placeholder="password">
+						    <br>
 						    <label class="control-label" for="cmt"><b>Comments: </b></label>
+						    <br>
 						    <textarea class="form-control input-lg" rows="5" id="comment" placeholder= "Enter your comments"></textarea>
 						    <br>
 						    <button id = "btn"type="button" class="btn btn-default" onclick= "post()">Post Comment</button>
@@ -61,6 +66,9 @@
 						</div>
 						<div class="alert alert-danger" id = "authen_fail" style="display: none; ">
 							<STRONG>Can't display your comment please check if you have filled everything</STRONG>
+						</div>
+						<div class="alert alert-danger" id = "pwd_alert" style="display: none">
+							<strong>Check your password</strong>
 						</div>
 					</div>
 					<div class="col-md-2"></div>

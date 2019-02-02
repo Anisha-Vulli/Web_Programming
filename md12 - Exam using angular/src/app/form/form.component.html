@@ -1,0 +1,63 @@
+<div class="container-fluid" >
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="head row">
+        <h1 id = "heading" style="font-family: Algerian; margin-top: 5%"><b>Post your comments here</b></h1>
+      </div>
+      <div class = "enter row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+          <form class="form-horizontal-fluid">
+            <div class="form-group">
+              <label class="control-label" for="name"><b>Name: </b></label>
+              <br>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" [(ngModel)] = "name" [ngModelOptions]="{standalone: true}">
+              <br>
+              <label for="pwd"><b>Password:</b></label>
+              <br>
+              <input type="password" class="form-control" id="pwd" placeholder="password" [(ngModel)] = "pwd" [ngModelOptions]="{standalone: true}">
+              <br>
+              <label class="control-label" for="cmt"><b>Comments: </b></label>
+              <br>
+              <textarea class="form-control" rows="5"  placeholder= "Enter your comments" [(ngModel)] = "comment" [ngModelOptions]="{standalone: true}"></textarea>
+              <br>
+              <button id = "btn"type="button" class="btn btn-default" (click) = "post()">Post Comment</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class = "alert alert-success" id = "authen_go" [style.display] = "succstyle">
+            <strong>Success!!! Access granted..</strong>
+          </div>
+          <div class="alert alert-danger" id = "authen_fail" [style.display] = "fillstyle">
+            <STRONG>Can't display your comment please check if you have filled everything</STRONG>
+          </div>
+          <div class="alert alert-danger" id = "pwd_alert" [style.display] = "pwdstyle">
+            <strong>Check your password</strong>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      
+      
+      <div class="display row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div id = "card_to_be_displayed">
+            <app-display></app-display>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  
+</div>

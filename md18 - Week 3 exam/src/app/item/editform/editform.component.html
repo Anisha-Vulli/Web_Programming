@@ -1,0 +1,16 @@
+<button type="button" class="btn btn-primary" style="background-color: #28a745;"  id = "button {{index}}" (click) = "edit($event)">Edit</button>
+<br>
+<br>
+<div class = "row" [style.display] = "display">
+  <form>
+    <div class="form-group">
+      <label for="parameter">Enter the parameter which you want to edit:</label>
+      <input type="text" class="form-control" id="parameter" [value] = "parval" [(ngModel)] = "parameter" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+      <label for="data">Enter data:</label>
+      <input type="text" class="form-control" id="data" [value] = "txtval" [(ngModel)] = "text" [ngModelOptions]="{standalone: true}">
+    </div>
+    <button type="submit" class="btn btn-default" (click) = submit()>Submit</button>
+  </form>
+</div>

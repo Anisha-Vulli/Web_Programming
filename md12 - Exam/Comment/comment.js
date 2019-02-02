@@ -1,8 +1,6 @@
 var key = "123456789";
 var values = [];
-// $("form [name='addmore[]']").each(function() {
-// 	values.push($(this).val());
-// });
+
 function post() {
 	var check = all();
 	console.log(check);
@@ -22,7 +20,7 @@ function post() {
 		} else {
 			var check = all();
 			if (check) {
-				document.getElementById('authen_fail').style.display = 'block';
+				document.getElementById('pwd_alert').style.display = 'block';
 				document.getElementById('authen_go').style.display = 'none';
 			}
 		}
