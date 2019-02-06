@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { pwdvalidator } from './cnfrmpwdvalidator';
 
 
 @Component({
@@ -19,9 +20,11 @@ export class SignupComponent implements OnInit {
             lastName: ['', Validators.required],
             email: ['', [Validators.required, Validators.email]],
             phnum: ['', [Validators.required, Validators.minLength(10)]],
-            password: ['', [Validators.required, Validators.minLength(6)]]
+            password: ['', [Validators.required, Validators.minLength(6)]],
+            cnfrmpwd: ['', [Validators.required, Validators.minLength(6), pwdvalidator]],
+            address: ['', [Validators.required]]
         });
-        // console.log(controls.firstName.touched);
+        // console.log(pwdvalidator);
     }
 
     // convenience getter for easy access to form fields

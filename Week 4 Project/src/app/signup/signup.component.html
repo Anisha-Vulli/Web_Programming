@@ -24,7 +24,7 @@
                         </div>
                         <div class="form-group">
                             <label><i class="fas fa-phone"></i>&nbsp;Phone Number:</label>
-                            <input type="text" formControlName="phnum" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.phnum.errors }" />
+                            <input type="text" formControlName="phnum" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.phnum.errors }"/>
                             <div *ngIf="submitted && f.phnum.errors" class="invalid-feedback">
                                 <div *ngIf="f.phnum.errors.required">Phone number is required</div>
                                 <div *ngIf="f.phnum.errors.minlength">Phone number must be valid</div>
@@ -32,7 +32,7 @@
                         </div>
                         <div class="form-group">
                             <label><i class="fas fa-envelope"></i> &nbsp;Email</label>
-                            <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                            <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"/>
                             <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
                                 <div *ngIf="f.email.errors.required">Email is required</div>
                                 <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
@@ -45,6 +45,19 @@
                                 <div *ngIf="f.password.errors.required">Password is required</div>
                                 <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
                             </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <input type="password" formControlName="cnfrmpwd" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.cnfrmpwd.errors }" />
+                            <div *ngIf="submitted && f.cnfrmpwd.errors" class="invalid-feedback">
+                                <div *ngIf="f.cnfrmpwd.errors.required">Password is required</div>
+                                <div *ngIf="f.cnfrmpwd.errors.minlength">Password must be at least 6 characters</div>
+                                <div *ngIf = "f.cnfrmpwd.invalid">Both passwords should match</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                          <label><i class="fas fa-address-card"></i> &nbsp;Address:</label>
+                          <textarea rows = "5" type = "text" formControlName = "address" class= "form-control" [ngClass] = "{'is-invalid': submitted && f.address.errors}"></textarea>
                         </div>
                         <div class="form-group">
                           <button type="button" class="btn btn-primary" id = "register" (click)="onSubmit()">Register</button>
