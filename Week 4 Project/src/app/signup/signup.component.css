@@ -9,7 +9,7 @@
     color: white;
 }
 
-#button {
+#register {
     background-color: chocolate;
     border: none;
     color: white;
@@ -25,4 +25,4 @@
     margin-left: 35%;
   }
   
-#button:hover {opacity: 1}
+#register:hover {opacity: 1}
