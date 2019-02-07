@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { pwdvalidator } from './cnfrmpwdvalidator';
+import { Router } from '@angular/router';
+import {  UserserviceService } from '../Userservice.service';
 
 
 @Component({
@@ -11,8 +13,9 @@ import { pwdvalidator } from './cnfrmpwdvalidator';
 export class SignupComponent implements OnInit {
   registerForm: FormGroup;
     submitted = false;
+    user: any;
 
-    constructor(private formBuilder: FormBuilder) { }
+    constructor(private formBuilder: FormBuilder, private userser: UserserviceService, private router: Router) { }
 
     ngOnInit() {
         this.registerForm = this.formBuilder.group({
@@ -25,11 +28,14 @@ export class SignupComponent implements OnInit {
             address: ['', [Validators.required]]
         });
         // console.log(pwdvalidator);
+
+        this.registerForm.controls.password.valueChanges.subscribe(
+            x => this.registerForm.controls.cnfrmpwd.updateValueAndValidity());
     }
 
     // convenience getter for easy access to form fields
     get f() { return this.registerForm.controls; }
-    onSubmit() {
+    onSubmit(fname, lname, phnum, email, pwd, address) {
       this.submitted = true;
 
       // stop here if form is invalid
@@ -37,6 +43,8 @@ export class SignupComponent implements OnInit {
           return;
       }
 
-      alert('SUCCESS!! :-)');
+      this.userser.addUser(fname, lname, phnum, email, pwd, address).subscribe(() => {
+        this.router.navigate(['/login']);
+      });
   }
 }
