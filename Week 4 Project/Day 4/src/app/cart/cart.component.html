@@ -1,0 +1,30 @@
+<!-- To display topNav Bar -->
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Navbar</span>
+  </nav>
+  <div class = "container-fluid">
+      <ul class="list-group" style = "margin-bottom: 10px;">
+          <li class="list-group-item" *ngFor = "let item of allproducts; index as i">
+            <div class = "row">
+                <div class = "col-lg-2 col-md-2 col-sm-2">
+                    <img src="{{item.prodimg}}"  alt="..." style = "width: 55%; height: 70%">
+                </div>
+                <div class = "col-lg-4 col-md-4 col-sm-4" id="item" >
+                    <h4>{{item.prodname}}</h4>
+                </div>
+                <div class = "col-md-4">
+                    <app-quantity [price] = "item.prodprice" [max] = "item.prodavail"></app-quantity>
+                </div>
+                <div class = "col-lg-2 col-md-2 col-sm-2" id="item">
+                    <button type="button" class="btn btn-outline-danger" style = "margin-left: 10%">Remove</button>
+                </div>
+            </div>
+          </li>
+        </ul>
+        <div class = "row">
+          <div class = "col-lg-10"></div>
+          <div class = "col-lg-2">
+              <button style = "float:right;" type="button" class="btn btn-warning">CHECK OUT</button>
+          </div>
+        </div>
+  </div>
